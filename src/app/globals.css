@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-[#050505] text-amber-50 antialiased;
+  }
+}
+
+/* Custom minimal dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 251, 235, 0.1); /* amber-50 at 10% opacity */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 251, 235, 0.3); /* subtle amber/gold hover */
+}
